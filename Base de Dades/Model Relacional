@@ -30,6 +30,7 @@ PACIENT(
     dni,
     nom,
     cognom,
+    email,
     telefon
 )
 HABITACIO(
