@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS PACIENT (
     dni VARCHAR(9) NOT NULL,
     nom VARCHAR(50),
     cognom VARCHAR(100),
+    email VARCHAR(50),
     telefon VARCHAR(15) NOT NULL
 );
 
