@@ -61,6 +61,14 @@ CREATE TABLE IF NOT EXISTS QUIROFAN (
     FOREIGN KEY (id_planta) REFERENCES PLANTA(id_planta)
 );
 
+CREATE TABLE IF NOT EXISTS aparell_medic (
+    id_serie SERIAL PRIMARY KEY,
+    tipus VARCHAR(50),
+    quantitat INT,
+    id_quirofan INT,
+    FOREIGN KEY (id_quirofan) REFERENCES QUIROFAN(id_quirofan)
+    );
+
 CREATE TABLE IF NOT EXISTS RESERVA (
     id_reserva SERIAL PRIMARY KEY,
     dia_ingres DATE,
